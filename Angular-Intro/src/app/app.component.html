@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>Here is a title sizee 3</h3>
+      <hr>
+      <app-server></app-server>
+      <app-prose></app-prose>
+      <hr>
+      <app-prosetemplate></app-prosetemplate>
+    </div>
+  </div>
+    <ul>
+      <li><a href="" class="social"></a><span></span></li>
+      <li><a href="" class="social"></a><span></span></li>
+      <li><a href="" class="social"></a><span></span></li>
+      <li><a href="" class="social"></a><span></span></li>
+      <li><a href="" class="social"></a><span></span></li>
+    </ul>
+
+</div>
+<hr>
+<button type="button" class="btn btn-primary" (click)="onToggleDetails()">Display details</button>
+<p *ngIf="showSecret">secret password is tuna</p>
+<div *ngFor="let logItem of log;let i = index"
+  [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent' }"
+  [ngClass]="{'white-text' : i  >= 4}"
+
+>{{ logItem }}</div>
