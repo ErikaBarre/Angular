@@ -7,3 +7,5 @@
 ##Elsa
 ##Gina
 ##Samantha
+##Diana
+##Salsa
